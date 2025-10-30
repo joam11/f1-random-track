@@ -19,6 +19,9 @@ number = st.slider(
     value=1
 )
 
+selected_tracks = random.sample(tracks, number)
+
+
 st.subheader("Here is your track selection:")
 for t in selected_tracks:
     st.write(f"🏁 {t}")
